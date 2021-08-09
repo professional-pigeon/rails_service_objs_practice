@@ -6,8 +6,12 @@ class MainsController < ApplicationController
     render :index
   end
 
-  def secret
+  def search
+    art_object = Art.new(params[:search])
+    @photo = art_object.art_me
+  end
 
+  def secret
   end
 
 end

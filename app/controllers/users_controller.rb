@@ -16,9 +16,9 @@ class UsersController < ApplicationController
     end
   end
 
-  def index
-    @user - User.find(session[:user_id])
-  end 
+  # def index
+  #   @user - User.find(session[:user_id])
+  # end 
 
   def show
     @message = "Protected content reached"
