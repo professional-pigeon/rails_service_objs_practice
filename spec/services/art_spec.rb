@@ -8,7 +8,7 @@ describe Art do
   
   it "returns art when the API call is made" do
     response = JSON.parse(Art.get_art)
-    expect(response["results"]["books"]).to_not(eq(nil))
+    expect(response["data"]["title"]).to_not(eq(nil))
   end
 
 end 
