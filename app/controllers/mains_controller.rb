@@ -9,7 +9,7 @@ class MainsController < ApplicationController
 
   def search
     art_object = Art.new(params[:search])
-    @photo = art_object.get_art
+    @photo = art_object.get_art_really
   end
 
 end
